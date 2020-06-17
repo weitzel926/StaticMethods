@@ -8,8 +8,8 @@
 import Foundation
 
 class MessageManager {
-    var swiftStaticUtils:SwiftStaticUtilsProtocol.Type! = SwiftStaticUtils.self
-    var objectiveCStaticUtils:ObjectiveCStaticUtilsProtocol.Type! = ObjectiveCStaticUtils.self
+    var swiftStaticUtils:SwiftStaticUtilsProtocol.Type = SwiftStaticUtils.self
+    var objectiveCStaticUtils:ObjectiveCStaticUtilsProtocol.Type = ObjectiveCStaticUtils.self
     
     func getMessage() -> String {
         if objectiveCStaticUtils.getAppVersionType() == "US" {

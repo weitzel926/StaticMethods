@@ -24,7 +24,7 @@ class SwiftStaticUtils {
     
     static func getUKMessage() -> String {
         guard let hour = SwiftStaticUtils.getHour() else {
-            return "Welcome American"
+            return "Welcome Briton"
         }
         
         if hour <= 12 {
